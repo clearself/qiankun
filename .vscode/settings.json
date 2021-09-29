@@ -1,0 +1,22 @@
+{
+  "eslint.workingDirectories": [
+        { 
+            "directory" : "./main", 
+            "changeProcessCWD": true
+        },
+        { 
+            "directory" : "./sub-ven", 
+            "changeProcessCWD": true
+        }
+    ],
+  "eslint.enable": true,
+  "editor.formatOnSave": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "search.useIgnoreFiles": false,
+  "search.exclude": {
+    "**/dist": true
+  },
+  "eslint.debug": true,
+}
