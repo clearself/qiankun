@@ -16,7 +16,7 @@ const render = (options) => {
 
 //   document.querySelector('.container').appendChild(node)
 
-document.querySelector('#open').innerHTML = `<a target="_blank" href="${window.__INJECTED_PUBLIC_PATH_BY_QIANKUN__}">打开独立运行环境</a>`
+document.querySelector('#current-env').appendChild(`<a target="_blank" href="${window.__INJECTED_PUBLIC_PATH_BY_QIANKUN__}">打开独立运行环境</a>`)
             var result = document.querySelector('#result');
 			var QrCode = new QrCodeRecognition({
 			    sweepId: '#canvas',

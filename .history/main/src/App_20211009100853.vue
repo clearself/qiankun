@@ -110,10 +110,8 @@ html, body{
 }
 
 #subapp-viewport{
-    height: calc( 100vh - 50px );
+    height: calc(100vh-50px);
     width: 100%;
-    overflow-x: hidden;
-    overflow-y: auto;
 }
 .logo {
     float: left;

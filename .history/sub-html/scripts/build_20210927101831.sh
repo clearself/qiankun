@@ -9,6 +9,4 @@ mkdir ./dist
 cp -r ./public/* ./dist/
 
 cp -r ./js ./dist/js
-cp -r ./css ./dist/css
-cp -r ./img ./dist/img
 

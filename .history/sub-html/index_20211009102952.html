@@ -1,11 +1,13 @@
 <html>
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>二维码：扫描、识别</title>
-    <link rel="stylesheet" href="/subapp/sub-html/css/base.css" />
-    
+    <title>sub-html子应用开发环境</title>
+    <style>
+      .container{
+        padding: 20px;
+      }
+    </style>
   </head>
   <body>
     <menu class="menu" id="menu">
@@ -17,7 +19,6 @@
             <button class="sweep">
                 <input type="file" id="file" />从相册选择
             </button>
-            <div id="open"></div>
             <div class="imgurl">
                 <img id="imgurl"
                     src="./img/qr.png"
@@ -27,16 +28,11 @@
             <canvas class="canvas" id="canvas"></canvas>
         </aside>
     </main>
-    <!-- 二维码识别 -->
 
     <!-- 开发环境的相对路径引用方式 -->
-    <!-- <script src="./js/main.js"></script> -->
+    <script src="./js/main.js"></script>
 
-    <!-- 由于没有webpack自动构建，线上path需要根据部署路径手动更换 -->
-    <script src="/subapp/sub-html/js/qrcode.js"></script>
-    <script src="/subapp/sub-html/js/jimp.js"></script>
-    <script src="/subapp/sub-html/js/jsqr.min.js"></script>
-    <script src="/subapp/sub-html/js/base.js"></script>
-    <script src="/subapp/sub-html/js/main.js"></script>
+    <!-- 由于没有webpack自动构建，线上path需要根据部署路径手动更换，本项目把html文件分开管理，线上环境的html放在 public 文件夹 -->
+    <!-- <script src="/subapp/sub-html/js/main.js"></script> -->
   </body>
 </html>

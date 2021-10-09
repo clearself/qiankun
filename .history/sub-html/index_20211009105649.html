@@ -4,7 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>二维码：扫描、识别</title>
-    <link rel="stylesheet" href="/subapp/sub-html/css/base.css" />
+    <link rel="stylesheet" href="./css/base.css" />
     
   </head>
   <body>
@@ -17,7 +17,6 @@
             <button class="sweep">
                 <input type="file" id="file" />从相册选择
             </button>
-            <div id="open"></div>
             <div class="imgurl">
                 <img id="imgurl"
                     src="./img/qr.png"
@@ -28,15 +27,11 @@
         </aside>
     </main>
     <!-- 二维码识别 -->
-
+	<script defer src="./js/qrcode.js"></script>
+    <script defer src="./js/jimp.js"></script>
+    <script defer src="./js/jsqr.min.js"></script>
+    <script defer src="./js/base.js"></script>
     <!-- 开发环境的相对路径引用方式 -->
-    <!-- <script src="./js/main.js"></script> -->
-
-    <!-- 由于没有webpack自动构建，线上path需要根据部署路径手动更换 -->
-    <script src="/subapp/sub-html/js/qrcode.js"></script>
-    <script src="/subapp/sub-html/js/jimp.js"></script>
-    <script src="/subapp/sub-html/js/jsqr.min.js"></script>
-    <script src="/subapp/sub-html/js/base.js"></script>
-    <script src="/subapp/sub-html/js/main.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>

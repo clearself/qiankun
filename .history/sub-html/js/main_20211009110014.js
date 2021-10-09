@@ -16,7 +16,7 @@ const render = (options) => {
 
 //   document.querySelector('.container').appendChild(node)
 
-document.querySelector('#open').innerHTML = `<a target="_blank" href="${window.__INJECTED_PUBLIC_PATH_BY_QIANKUN__}">打开独立运行环境</a>`
+
             var result = document.querySelector('#result');
 			var QrCode = new QrCodeRecognition({
 			    sweepId: '#canvas',
@@ -49,6 +49,10 @@ document.querySelector('#open').innerHTML = `<a target="_blank" href="${window._
 (global => {
   global['prehtml'] = {
     bootstrap: () => {
+        import './js/qrcode.js'
+import './js/jimp.js'
+import './js/jsqr.min.js'
+import './js/base.js'
       console.log('purehtml bootstrap');
       return Promise.resolve();
     },

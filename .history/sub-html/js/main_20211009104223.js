@@ -1,4 +1,7 @@
-
+require('./js/qrcode.js')
+require('./js/jimp.js')
+require('./js/jsqr.min.js')
+require('./js/base.js')
 const render = (options) => {
   // options是基座下发的参数，可以保存到全局的状态管理或其他地方，用于后面与基座进行通信
   
@@ -16,7 +19,7 @@ const render = (options) => {
 
 //   document.querySelector('.container').appendChild(node)
 
-document.querySelector('#open').innerHTML = `<a target="_blank" href="${window.__INJECTED_PUBLIC_PATH_BY_QIANKUN__}">打开独立运行环境</a>`
+
             var result = document.querySelector('#result');
 			var QrCode = new QrCodeRecognition({
 			    sweepId: '#canvas',
