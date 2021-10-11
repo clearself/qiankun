@@ -1,0 +1,42 @@
+
+.header input{
+	width:150px;
+	line-height: 24px;
+	margin: 0 10px;
+}
+.header button{
+	width:120px;
+	line-height: 24px;
+	cursor: pointer;
+	margin: 0 10px;
+}
+.table{
+	width:100%;
+	margin: 20px 0;
+}
+.table th,.table td{
+    padding:5px;
+	font-size:12px;
+}
+.table thead tr{
+	background-color: rgba(	34,139,34,.2);
+}
+.table tbody tr:nth-child(even){
+	background-color: rgba(176,224,230,.2);
+}
+.table tbody tr:nth-child(odd){
+	background-color: rgba(47,79,79,.2);
+}
+.table tbody span{
+	cursor: pointer;
+}
+.table tbody td{
+    text-align: center;
+}
+.del-btn{
+    color:red;
+}
+.footer button{
+	margin: 5px;
+	cursor: pointer;
+}

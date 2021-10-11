@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>二维码：扫描、识别</title>
+    <link rel="stylesheet" href="./css/base.css" />
+    
+  </head>
+  <body>
+    <menu class="menu" id="menu">
+        <nav class="active" >二维码识别</nav>
+    </menu>
+    <main class="main">
+        <aside class="reader">
+            <button class="sweep" id="sweep">扫一扫</button>
+            <button class="sweep">
+                <input type="file" id="file" />从相册选择
+            </button>
+            <div id="open"></div>
+            <div class="imgurl">
+                <img id="imgurl"
+                    src="/sub-html//img/qr.png"
+                    alt="当前识别的二维码" />
+            </div>
+            <textarea class="result" id="result" cols="32" rows="6" placeholder="二维码识别结果！"></textarea>
+            <canvas class="canvas" id="canvas"></canvas>
+        </aside>
+    </main>
+    <!-- 二维码识别 -->
+	<script type="text/javascript" defer src="./js/qrcode.js"></script>
+    <script type="text/javascript" defer src="./js/jimp.js"></script>
+    <script type="text/javascript" defer src="./js/jsqr.min.js"></script>
+    <script type="text/javascript" defer src="./js/base.js"></script>
+    <!-- 开发环境的相对路径引用方式 -->
+    <script type="text/javascript" defer src="./js/main.js"></script>
+  </body>
+</html>
